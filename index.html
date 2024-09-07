@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffany Lee Photography Portfolio</title>
+    <link rel="stylesheet" href="tiffany.css">
+</head>
+<body>
+    <header>
+        <!-- Transparent Image Section -->
+        <div id="transparent-image">
+            <img src="images/5edd617e8457fdda90c34fd97cde4ab1.gif" alt="Transparent Image">
+        </div>
+
+        <h1>teapea's photo corner</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking">Book a Session</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="big-photo">
+        <img src="images/hehe.jpg" alt="Featured Photo">
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an INTJ with a dream to make the world I see a little more cinematic.</p>
+        <p>I enjoy capturing the aesthetics of life, light, and color.</p>
+        <!-- Instagram Reel Thumbnail -->
+        <video width="640" height="360" controls>
+            <source src="images/movie vid.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+
+        <div class="gallery-item">
+            <a href="https://www.instagram.com/p/C-tRM5CuDjk/" target="_blank">
+                <img src="reel-thumbnail.jpg" alt="Instagram Reel">
+            </a>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the methods below:</p>
+        <ul>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/t._.lee" target="_blank">@t._.lee</a></li>
+            <li><strong>Email:</strong> <a href="mailto:tlee602@gatech.edu">tlee602@gatech.edu</a></li>
+            <li><strong>Phone:</strong> 929-395-9002</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+
+        <!-- Gallery Explanation Section -->
+        <section id="gallery-explanation">
+            <h2>Alice in Wonderland Inspired</h2>
+            <p>I took the challenge to be bolder with styling and using editing tools to give the photoshoot a more dreamy effect.</p>
+        </section>
+
+        <!-- First Set of Photos -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/IMG_4902.jpg" alt="Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_4917.jpg" alt="Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG_5069.JPG" alt="Photo 3">
+            </div>
+        </div>
+
+        <!-- Cinematic Style Section -->
+        <section id="cinematic-style">
+            <h2>Cinematic Style</h2>
+            <p>For this, I practiced with color grading, utilizing purples, greens, and yellows to create a more film-like feel. The model is my sister.</p>
+        </section>
+
+        <!-- Second Set of Photos -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/DSC_1552-5.jpg" alt="Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/DSC_1610-2.jpg" alt="Photo 5">
+            </div>
+        </div>
+
+        <!-- Atlanta Postcards Section -->
+        <section id="atlanta-postcards">
+            <h2>Atlanta Postcards</h2>
+            <p>A glimpse of what a native New Yorker sees in the beauty of Atlanta.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/IMG_4419.jpg" alt="Atlanta Postcard 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_4443.jpg" alt="Atlanta Postcard 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_4347.jpg" alt="Atlanta Postcard 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_4375.jpg" alt="Atlanta Postcard 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_4364.jpg" alt="Atlanta Postcard 5">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book a Photography Session!</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdT4F36cfrBzhLDn3p5GgpGD1xQF6LKIJJ5TA3wM3n9ZH74rQ/viewform?embedded=true" width="640" height="2478" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the methods below:</p>
+        <ul>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/t._.lee" target="_blank">@t._.lee</a></li>
+            <li><strong>Email:</strong> <a href="mailto:tlee602@gatech.edu">tlee602@gatech.edu</a></li>
+            <li><strong>Phone:</strong> 929-395-9002</li>
+        </ul>
+    </section>
+
+    <!-- Modal for Larger Images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById("modal");
+
+    // Get the images and insert them into the modal
+    var images = document.querySelectorAll('.gallery-item img');
+    var modalImg = document.getElementById("modal-img");
+    var captionText = document.getElementById("caption");
+
+    images.forEach(function(image) {
+        image.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    
+    </script>
+    
+
+</body>
+</html>

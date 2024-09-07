@@ -1,0 +1,231 @@
+/* General Settings */
+/* Apply Libre Baskerville as the main font */
+body {
+    font-family: 'Libre Baskerville', serif; /* Applying the Libre Baskerville font */
+    color: #333; /* General text color */
+}
+
+/* Header Style */
+header h1 {
+    font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville to the header */
+    font-size: 3rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    margin: 20px 0; /* Adds space around the text */
+    color: #333; /* Adjust the text color if needed */
+}
+
+/* Other Headings */
+h2 {
+    font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville to other headings */
+    font-weight: bold;
+}
+
+/* Other text elements */
+p, li, a {
+    font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville to paragraphs, list items, and links */
+}
+
+#transparent-image {
+    text-align: center; /* Center the image */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Contact section, adjust text */
+#contact-section {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 auto; /* Center the contact section */
+    max-width: 800px; /* Limit width for better readability */
+}
+
+/* Header */
+header {
+    background-color: #F2E6D3; /* Light beige */
+    color: #1C1C1C;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #D94A3E; /* Reddish links */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px; /* Rounded button effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #D94A3E; /* Background color on hover */
+    color: #FFF; /* White text color on hover */
+}
+
+/* Big Photo */
+#big-photo {
+    width: 100%;
+    height: auto;
+    margin: 50px 0; /* Space between sections */
+}
+
+#big-photo img {
+    width: 100%; /* Full-width image */
+    max-height: 600px; /* Max height to prevent overflow */
+    object-fit: cover; /* Ensure the image covers the entire area nicely */
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px; /* Slight rounding to soften the edges */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FFF7E6; /* Lighter beige for contrast */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #FFF7E6; /* Matching lighter beige background */
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the contact list */
+    max-width: 600px; /* Limit width for better readability */
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #2D5E31; /* Dark green links */
+    text-decoration: none;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    background-color: #FFF7E6; /* Light beige background */
+    text-align: center;
+}
+
+/* Gallery Explanation Section Styling */
+#gallery-explanation,
+#cinematic-style,
+#atlanta-postcards {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#gallery-explanation h2,
+#cinematic-style h2,
+#atlanta-postcards h2 {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 10px; /* Adds space below the heading */
+    color: #333; /* Dark text color for contrast */
+}
+
+#gallery-explanation p,
+#cinematic-style p,
+#atlanta-postcards p {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    line-height: 1.6; /* Improves readability */
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Gallery Grid Styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Gallery Item Image Styling */
+.gallery-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect */
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up slightly */
+    }
+    100% {
+        transform: translateY(0px); /* Move back to original position */
+    }
+}
+
+/* Booking Section */
+#booking {
+    padding: 50px 20px;
+    background-color: #FFF7E6; /* Matching lighter beige background */
+    text-align: center;
+    margin-bottom: 50px; /* Adds space before the footer */
+}
+
+#booking h2 {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+#booking iframe {
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Footer */
+footer {
+    background-color: #274D26; /* Dark green */
+    color: #FFF7E6;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
