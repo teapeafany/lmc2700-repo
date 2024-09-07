@@ -29,3 +29,24 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var popup = document.getElementById('popup');
+    var popupBtn = document.getElementById('popupBtn');
+    var closeBtn = document.querySelector('.close');
+
+    popupBtn.addEventListener('click', function () {
+        popup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+
+    // Optional: Close the popup if the user clicks outside of it
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
